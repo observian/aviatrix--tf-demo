@@ -15,36 +15,31 @@ variable "zones" {
 }
 
 variable "application" {
-  default = "ob-eks-demo"
+  default = "aviatrix-controller"
 }
 variable "env" {
-  default = "dev"
+  default = "hub"
 }
 
 variable "vpc_cidr" {
-  description = "CIDR block for ob-eks-demo vpc"
+  description = "CIDR block for aviatrix-controller vpc"
 }
 
 variable "public_alpha_cidr" {
   description = "CIDR block for public subnet alpha"
 }
 
-variable "private_alpha_cidr" {
-  description = "CIDR block for private subnet alpha"
-}
+# variable "private_alpha_cidr" {
+#   description = "CIDR block for private subnet alpha"
+# }
 
 variable "public_bravo_cidr" {
   description = "CIDR block for public subnet bravo"
 }
 
-variable "private_bravo_cidr" {
-  description = "CIDR block for private subnet bravo"
-}
-
-variable "namespace" {
-  description = "default namespace that isn't the default namespace.  Defaults to \"development\""
-  default     = "development"
-}
+# variable "private_bravo_cidr" {
+#   description = "CIDR block for private subnet bravo"
+# }
 
 variable "keypair" {
   default     = "aviatrix"
